@@ -1,0 +1,45 @@
+.main-navigation {
+  &__menu-btn {
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 2rem;
+    cursor: pointer;
+
+    @include respond(tab-port) {
+      display: flex;
+    }
+
+    & span {
+      display: block;
+      width: 3rem;
+      height: 2.5px;
+      background: $color-white;
+    }
+  }
+
+  &__title {
+    color: $color-white;
+
+    & a {
+      text-decoration: none;
+      color: $color-white;
+    }
+  }
+
+  &__header-nav {
+    display: block;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__drawer-nav {
+    height: 100%;
+  }
+}
